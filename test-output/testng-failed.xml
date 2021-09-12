@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)" parallel="classes">
+    <parameter name="pass" value="Srikanth12345"/>
+    <parameter name="email" value="srikanthsankaran"/>
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.sample.example.TestNGParellel">
+        <methods>
+          <include name="browerlaunch"/>
+          <include name="browerlaunch2"/>
+        </methods>
+      </class> <!-- com.sample.example.TestNGParellel -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

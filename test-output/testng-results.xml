@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="2" total="4" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="19210" started-at="2021-09-06T06:01:12Z" finished-at="2021-09-06T06:01:32Z">
+    <groups>
+      <group name="smoke">
+        <method signature="TestNGParellel.browerlaunch2(java.lang.String, java.lang.String)[pri:0, instance:com.sample.example.TestNGParellel@73ad2d6]" name="browerlaunch2" class="com.sample.example.TestNGParellel"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="TestNGParellel.browerlaunch(java.lang.String, java.lang.String)[pri:0, instance:com.sample.example.TestNGParellel@73ad2d6]" name="browerlaunch" class="com.sample.example.TestNGParellel"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test name="Test" duration-ms="19210" started-at="2021-09-06T06:01:12Z" finished-at="2021-09-06T06:01:32Z">
+      <class name="com.sample.example.TestNGParellel">
+        <test-method status="PASS" signature="browerlaunch(java.lang.String, java.lang.String)[pri:0, instance:com.sample.example.TestNGParellel@73ad2d6]" name="browerlaunch" duration-ms="19018" started-at="2021-09-06T11:31:13Z" finished-at="2021-09-06T11:31:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[srikanthsankaran]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Srikanth12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browerlaunch -->
+        <test-method status="FAIL" signature="browerlaunch2(java.lang.String, java.lang.String)[pri:0, instance:com.sample.example.TestNGParellel@73ad2d6]" name="browerlaunch2" duration-ms="0" depends-on-groups="sanity" started-at="2021-09-06T11:31:32Z" finished-at="2021-09-06T11:31:32Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Cannot inject @Test annotated Method [browerlaunch2] with [class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Cannot inject @Test annotated Method [browerlaunch2] with [class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:244)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:172)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:458)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:569)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1308)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1036)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1126)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browerlaunch2 -->
+      </class> <!-- com.sample.example.TestNGParellel -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
